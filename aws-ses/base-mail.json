@@ -1,0 +1,7 @@
+
+{
+  "Source":"Wise Monkeys <ops@wisemonkeys.co>",
+  "Template": "nome",
+  "Destination": { "ToAddresses": ["private.customers@wisemonkeys.co"]},
+  "TemplateData": "{\"version\":\"6.2.0\", \"milestone\":\"7\", \"pullRequest\":\"54\", \"features\":[{\"description\":\"Sports\"},{\"description\":\"Travel\"},{\"description\":\"Cooking\"}] }"
+}

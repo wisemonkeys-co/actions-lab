@@ -1,0 +1,28 @@
+name: Ready to homolog
+on:
+  repository_dispatch:
+    types: [hmg-ready]
+  workflow_dispatch:  
+env:
+  ORGANIZATION:  wisemonkeys-co 
+  PRODUCT:       wise-billing
+  CHILD_SERVICE: ${{ github.event.client_payload.service }}
+  CHILD_BRANCH:  ${{ github.event.client_payload.branch }}
+  MERGED_AT:     ${{ github.event.client_payload.mergedAt }}
+  PR_TITLE:      ${{ github.event.client_payload.title }}
+
+jobs:
+  upgrade-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: echo branch
+        run:  |
+         echo "PR ${PR_TITLE} from ${CHILD_BRANCH} of repo ${CHILD_SERVICE} merged at ${MERGED_AT} " 
+        
+#service:"$CHILD_SERVICE" branch:"$CHILD_BRANCH
+
+          
+          
+          
