@@ -40,7 +40,7 @@ jobs:
                 mkdir -p releases/$MILESTONE_TITLE
                 echo $(date) milestone $MILESTONE_TITLE $MILESTONE_NUMBER branch $branch created >> releases/$MILESTONE_TITLE/trace
                 git add .
-                git commit -a -m "New pull request for milestone "$MILESTONE_TITLE" branch "${branch} 
+                git commit -a -m "New pull request for milestone "$MILESTONE_TITLE" ("$MILESTONE_NUMBER") branch "${branch} 
                 git push -u origin ${branch}
                 echo "Branch "$branch" created "
                 echo "Creting new PR "$branch" ... " 
