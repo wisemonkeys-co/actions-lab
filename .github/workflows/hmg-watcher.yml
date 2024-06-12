@@ -5,7 +5,7 @@ on:
   workflow_dispatch:  
 env:
   ORGANIZATION:  wisemonkeys-co 
-  PRODUCT:       wise-billing
+  PRODUCT:       actions-lab
   CHILD_SERVICE: ${{ github.event.client_payload.service }}
   CHILD_BRANCH:  ${{ github.event.client_payload.branch }}
   MERGED_AT:     ${{ github.event.client_payload.mergedAt }}

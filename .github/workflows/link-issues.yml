@@ -5,7 +5,7 @@ on:
 env:
   REPO_TOKEN:   ${{ secrets.WISE_CD_REPO_TOKEN }}
   ORGANIZATION: wisemonkeys-co 
-  PRODUCT:      wise-billing
+  PRODUCT:      actions-lab
   PROJECT_ID:   1
   GH_TOKEN:     ${{ secrets.GITHUB_TOKEN }}
   GH_REPO:      ${{ github.repository }}

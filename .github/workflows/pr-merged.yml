@@ -5,8 +5,8 @@ on:
       - closed
   workflow_dispatch:
 env:
-    ORGANIZATION: "wisemonkeys-co"  
-    PRODUCT:  "wise-billing"
+    ORGANIZATION: wisemonkeys-co  
+    PRODUCT:  actions-lab
     REPO_TOKEN:       ${{ secrets.WISE_CD_REPO_TOKEN }}
     AWS_ACCESS_KEY_ID: ${{ secrets.SES_ACCESS_KEY_ID }}
     AWS_SECRET_ACCESS_KEY: ${{ secrets.SES_SECRET_ACCESS_KEY }}
