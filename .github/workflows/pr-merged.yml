@@ -30,7 +30,7 @@ jobs:
       run:  |
        echo "Source branch _____________> "${PR_SOURCE_BRANCH}
        PARTS=(${PR_SOURCE_BRANCH//_/ }) 
-       echo PARTS
+       echo $PARTS
        PARENT_ISSUE_NUMBER=$(PARTS[1]) 
        echo "ISSUE NUMBER >>>> "${PARENT_ISSUE_NUMBER}
        echo "Number: "${PR_NUMBER}
