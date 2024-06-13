@@ -42,5 +42,5 @@ jobs:
 
        cat mail.json
 
-       aws ses send-templated-email --cli-input-json file://mail.json
+# aws ses send-templated-email --cli-input-json file://mail.json
             
