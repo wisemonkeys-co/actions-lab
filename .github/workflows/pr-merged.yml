@@ -13,7 +13,8 @@ env:
     AWS_DEFAULT_REGION: 'sa-east-1'
     PR_NUMBER: ${{ github.event.pull_request.number }}
     PR_TITLE: ${{ github.event.pull_request.title }}
-    PR_SOURCE_BRANCH: ${{ github.event.pull_request.base.ref }}
+    PR_SOURCE_BRANCH: ${{ github.event.pull_request.head.ref }}
+#    PR_SOURCE_BRANCH: ${ github.event.pull_request.base.ref }}
     MILESTONE_NUMBER: ${{ github.event.pull_request.milestone.number }}
     MILESTONE_TITLE: ${{ github.event.pull_request.milestone.title }}
        
